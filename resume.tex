@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \text{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Arpan Ghosh} \\ \vspace{1pt}
+    \small +91-7005415946 $|$ 
+    \href{mailto:arpnghosh@protonmail.com}{\underline{arpnghosh@protonmail.com}} $|$ 
+    \href{https://linkedin.com/in/arpnghosh}{\underline{linkedin.com/in/arpnghosh}} $|$
+    \href{https://github.com/arpnghosh}{\underline{github.com/arpnghosh}}  
+\end{center}
+%-----------EDUCATION-----------
+\section*{Education}
+\noindent
+\textbf{VIT Bhopal University} \hfill \text{Madhya Pradesh, India} \\
+Bachelor of Technology in Computer Science and Engineering \hfill \text{Expected May 2026} 
+\\ CGPA: 8.5
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{adm - Parallel download accelerator} $|$ \emph{Golang, Git}}{December 2024 -- Present}
+          
+          \resumeItemListStart
+            \resumeItem{Developed concurrent file download accelerator using goroutines and HTTP range requests}
+            \resumeItem{Designed CLI with Cobra supporting configurable workers}
+             \resumeItem{MIME-based file detection and temp file cleanup}
+            \href{https://github.com/arpnghosh/adm}{\underline{Github repo}} 
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Gosh - A simple shell implementation} $|$ \emph{Golang, Git}}{July 2024}
+          
+          \resumeItemListStart
+            \resumeItem{Implemented a fully functional command-line shell with built-in commands}
+            \resumeItem{Designed and integrated essential shell commands such as cd, ls, pwd, and exit}
+            \href{https://github.com/arpnghosh/gosh}{\underline{Github repo}} 
+
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Colabcoder - Real time coding} $|$ \emph{Javascript, Node js, React js, Socket io, Git}}{August 2023}
+          
+          \resumeItemListStart
+            \resumeItem{Created a collaborative coding platform using React for the frontend}
+            \resumeItem{Utilized Node.js with Socket.io for the backend.}
+            \resumeItem{Enabled users to create and join rooms for real-time code collaboration.}
+            \resumeItem{Successfully hosted the client side on vercel, deployed backend on render.com}
+            \href{https://github.com/arpnghosh/colabcoder}{\underline{Github repo}} 
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{WisePay - Expense manager backend} $|$ \emph{Javascript, Node js, Docker, Git}}{July 2023}
+          
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a RESTful CRUD API for expense management in Node.js.}
+            \resumeItem{Implemented data storage and retrieval using MongoDB}
+            \resumeItem{Implemented JWT (JSON Web Tokens) authentication for secure user access.}
+            \resumeItem{Containerized the application using Docker}
+            \href{https://github.com/arpnghosh/wisepay}{\underline{Github repo}} 
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section*{Technical Skills}
+\begin{tabular}{@{}p{1.5in}p{4in}@{}}
+    \textbf{Languages:} & C++, Go, JavaScript, TypeScript, Python, Java \\ 
+    \textbf{Frameworks:} & React.js, Node.js, Express \\ 
+    \textbf{Databases:} & MongoDB, PostgreSQL, MySQL \\ 
+    \textbf{Developer Tools:} & Git, Docker, Postman, Vim \\ 
+\end{tabular}
+
+%-------------------------------------------
+\end{document}
